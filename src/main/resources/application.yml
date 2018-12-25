@@ -1,0 +1,49 @@
+spring:
+    redis:
+      database: 10
+      host: 10.50.50.24 # 127.0.0.1
+      port: 6379
+      password: Haozhuo2015
+      jedis:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+    data:
+      mongodb:
+        uri: mongodb://apitest:Haozhuo2015@10.50.50.24:27017/ZSTJDev
+        uri-basic: mongodb://dbuser:Yubomongo2018@172.0.0.41:27017/cspmongo
+        uri-thirdpeis: mongodb://yubouser:yubopasswd@172.0.0.22:27017/ThirdPeis
+        uri-dtsMongo: mongodb://yubouser:yubopasswd@172.0.0.22:27017/DTSMongDB
+
+testinfo:
+  url: www.163.com
+  username: admin
+  password: admin
+
+
+appsigninfo:
+  issign: false
+  key: 1111
+  secret: 2222
+
+#Mybatis 映射配置
+mybatis:
+  mapper-locations: classpath:Mapper/*.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  type-aliases-package: com.example.project.comm
+
+
+
+comm:
+  one: "hello china!"
+  two: "shanghai!"
+
+
+
+#    redis:
+#        database: 10
+#        host: 10.50.50.24
+#        port: 6379
+#        password: Haozhuo2015
+
